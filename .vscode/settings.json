@@ -1,0 +1,38 @@
+{
+  "terminal.integrated.defaultProfile.windows": "MSYS2 MinGW 64-bit",
+  "terminal.integrated.profiles.windows": {
+    "MSYS2 MinGW 64-bit": {
+      "path": "C:\\msys64\\msys2_shell.cmd",
+      "args": ["-defterm", "-here", "-no-start", "-mingw64"],
+      "icon": "terminal-bash"
+    }
+  },
+  "cmake.debugConfig": {
+    "name": "CMake Debug",
+    "type": "cppdbg",
+    "request": "launch",
+    "program": "${command:cmake.launchTargetPath}",
+    "args": ["-interpreter=mi"],
+    "stopAtEntry": false,
+    "cwd": "${workspaceFolder}",
+    "environment": [],
+    "externalConsole": true,
+    "MIMode": "gdb",
+    "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
+    "setupCommands": [
+      {
+        "description": "Enable pretty-printing for gdb",
+        "text": "-enable-pretty-printing",
+        "ignoreFailures": true
+      }
+    ]
+  },
+  "cmake.buildDirectory": "${sourceDir}/build",
+  "cmake.environment": {
+    "PATH": "C:/msys64/mingw64/bin;${env:PATH}"
+  },
+  "cmake.loggingLevel": "debug",
+  "cmake.buildTask": false,
+  "C_Cpp.codeAnalysis.clangTidy.enabled": false,
+  "C_Cpp.formatting": "default"
+}
