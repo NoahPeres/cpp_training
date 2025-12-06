@@ -33,6 +33,5 @@
   },
   "cmake.loggingLevel": "debug",
   "cmake.buildTask": false,
-  "C_Cpp.codeAnalysis.clangTidy.enabled": false,
   "C_Cpp.formatting": "default"
 }
